@@ -25,8 +25,6 @@
 - [![Tailwind][Tailwind]][Tailwind-url]
 - [![Vitest][Vitest-shield]][Vitest-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## Getting Started
