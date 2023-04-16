@@ -3,44 +3,17 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/arthurbugan/frontend-challenge-coinsynch">
-    <img src="public/images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
   <h3 align="center">Frontend Challenge for EduSynch</h3>
-
-![Layout do coinsynch](./public/images/screenshot.png)
 
   <p align="center">
     Crypto landing page and dashboard
     <br />
-    <a href="https://frontend-challenge-coinsynch.vercel.app/">View Demo</a>
+    <a href="https://coin-app-next.vercel.app/">Preview</a>
   </p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#project-ui">Project UI</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-  </ol>
-</details>
 
-<br />
-
-#### Project UI
+#### Access the prototype on Figma:
 
 [![Figma][Figma-shield]][Figma-url]
 
@@ -50,7 +23,6 @@
 - [![Next][Next.js]][Next-url]
 - [![React][React.js]][React-url]
 - [![Tailwind][Tailwind]][Tailwind-url]
-- [![React Hook Form][Hook-Form-shield]][Hook-Form-url]
 - [![Vitest][Vitest-shield]][Vitest-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -71,11 +43,11 @@ To get a local copy up and running follow these simple steps.
 1. Get a free API Key at [https://docs.coinapi.io/](https://docs.coinapi.io/)
 2. Clone the repo
    ```sh
-   git clone https://github.com/arthurbugan/frontend-challenge-coinsynch.git
+   git clone https://github.com/andreferreiradaweb/coin-app-next.git
    ```
 3. Enter on the project folder
    ```sh
-     cd frontend-challenge-coinsynch
+     cd coin-app-next
    ```
 4. Install NPM packages
    ```sh
