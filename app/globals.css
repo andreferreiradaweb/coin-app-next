@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-5xl leading-[56px] tracking-[-1px] text-gray;
+  }
+  h2 {
+    @apply text-4xl leading-10 tracking-[-1px] text-gray;
+  }
+  h3 {
+    @apply text-[2rem] leading-10 text-gray;
+  }
+  h4 {
+    @apply text-2xl leading-8 text-gray;
+  }
+  h5 {
+    @apply text-xl leading-6 text-gray;
+  }
+
+  p {
+    @apply text-base text-gray;
+  }
+
+  label,
+  a {
+    @apply text-sm text-gray;
+  }
+
+  small {
+    @apply text-xs text-gray;
+  }
+
+  button {
+    @apply h-8 rounded-[32px];
+  }
+
+  button.primary {
+    @apply flex items-center justify-center;
+  }
+
+  button.primary > span {
+    @apply text-sm text-white;
+  }
+
+  button.ghost {
+    @apply bg-transparent hover:bg-primary-100;
+  }
+
+  button.ghost > span {
+    @apply text-sm text-gray;
+  }
+
+  input:checked + svg {
+    @apply block;
+  }
+}
+
+.embla {
+  --slide-spacing: 1rem;
+  --slide-size: 80%;
+  --slide-height: 100%;
+  height: 100%;
+}
+
+.embla__viewport {
+  height: var(--slide-height);
+  overflow: visible;
+}
+.embla__container {
+  height: var(--slide-height);
+  display: flex;
+  flex-direction: row;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+.embla__slide {
+  height: var(--slide-height);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+  position: relative;
+}
+.embla__slide__img {
+  height: var(--slide-height);
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+.embla__slide:not(.active) {
+  opacity: 50%;
+}
+
+.react-tooltip {
+  background-color: #fbab34;
+}
