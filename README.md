@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://coin-app-next.vercel.app/">
-    <img src="https://i.imgur.com/Tvx0QdZ.png" alt="Logo" width="80" height="80">
+    Click here to View Demo
   </a>
 
   <h3 align="center">Frontend Challenge for EduSynch</h3>
