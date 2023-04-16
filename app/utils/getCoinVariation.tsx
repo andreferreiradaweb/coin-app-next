@@ -1,5 +1,5 @@
 import { cache } from "react";
-import { percent } from "@hooks/format";
+import { percent } from "@utils/format";
 
 export interface CoinVariation {
   name: string;

@@ -6,7 +6,7 @@ import { BsPlus } from "react-icons/bs";
 import ETHGraph from "@components/chart/ETHChart";
 import CoinTrade from "@components/cointrade/CoinTrade";
 import CoinVariation from "@components/CoinVariation";
-import { coin } from "@hooks/format";
+import { coin } from "@utils/format";
 
 import balance from "../../public/images/balance.webp";
 

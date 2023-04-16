@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+@layer base {  
   h1 {
     @apply text-5xl leading-[56px] tracking-[-1px] text-gray;
   }

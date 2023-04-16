@@ -83,4 +83,10 @@ module.exports = {
     },
   },
   plugins: [],
+  scrollBehavior: {
+    auto: "smooth",
+    smooth: {
+      delay: 100,
+    },
+  },
 }

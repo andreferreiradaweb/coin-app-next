@@ -6,7 +6,7 @@ import { Tooltip } from "react-tooltip";
 import { Icons } from "@components/Card";
 import Button from "@components/buttons/Button";
 
-import { coin, leading } from "@hooks/format";
+import { coin, leading } from "@utils/format";
 import type { Coin } from "@utils/getCoins";
 import useTradeModal from "@hooks/useTradeModal";
 import useTrade from "@hooks/useTrade";

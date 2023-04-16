@@ -4,7 +4,7 @@ import { HiChevronUp } from "react-icons/hi";
 import Button from "@components/buttons/Button";
 import Disclosure from "@components/Disclosure";
 
-import { coin, leading } from "@hooks/format";
+import { coin, leading } from "@utils/format";
 import type { Coin } from "@utils/getCoins";
 import { getCoins } from "@utils/getCoins";
 
