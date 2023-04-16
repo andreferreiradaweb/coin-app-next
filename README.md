@@ -1,8 +1,4 @@
 <div align="center">
-  <a href="https://coin-app-next.vercel.app/">
-    Click here to View Demo
-  </a>
-
   <h3 align="center">Frontend Challenge for EduSynch</h3>
 
   <p align="center">
