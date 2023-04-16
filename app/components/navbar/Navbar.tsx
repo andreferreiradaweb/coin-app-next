@@ -1,8 +1,8 @@
 import { CgMenuRound } from "react-icons/cg";
 
 import Container from "@components/Container";
-import SignIn from "@components/buttons/SignIn";
-import Register from "@components/buttons/Register";
+import SignInButton from "@components/buttons/SignInButton";
+import SignUpButton from "@components/buttons/SignUpButton";
 
 import Logo from "./Logo";
 import MenuItem from "@components/menu/MenuItem";
@@ -20,10 +20,10 @@ const Navbar = () => {
             <Logo />
             <div className="z-10 flex md:order-3">
               <div className="hidden md:block">
-                <SignIn />
+                <SignInButton />
               </div>
               <div className="ml-6 hidden md:block">
-                <Register />
+                <SignUpButton />
               </div>
             </div>
 

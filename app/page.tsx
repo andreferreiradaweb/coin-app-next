@@ -4,8 +4,8 @@ import { StaticImageData } from "next/image";
 import Container from "@components/Container";
 import Chip from "@components/Chip";
 import Navbar from "@components/navbar/Navbar";
-import SignUp from "@components/buttons/Register";
-import Carrousel from "@components/carrousel/Carrousel";
+import SignUpButton from "@components/buttons/SignUpButton";
+import Carrousel from "@components/Carrousel";
 import Card from "@components/Card";
 import TableTopCrypto from "@components/tables/TableTopCrypto";
 import Newsletter from "@components/NewsLetter";
@@ -16,20 +16,19 @@ import newsletterShape from "../public/images/newsletter-shape.svg";
 
 import boy from "../public/images/boy.webp";
 import girl from "../public/images/girl.webp";
-import woman from "../public/images/woman.webp";
 
-const images: StaticImageData[] = [girl, boy, woman];
+const images: StaticImageData[] = [girl, boy];
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <>
-        <section className="md:pt-15 relative pt-14 xl:pt-40">
+        <section className="md:pt-15 relative pt-10 xl:pt-20">
           <Container>
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-24">
               <div className="flex flex-col items-center gap-y-7 md:items-start">
-                <h1 className="hidden text-primary-500 lg:block">
+                <h1 className="hidden text-primary-500 lg:block font-bold text-4x1">
                   Lorem ipsum dolor sit amet, consectetur
                 </h1>
                 <h3 className="hidden text-primary-500 md:block lg:hidden">
@@ -43,9 +42,9 @@ export default function Home() {
                   aliquam, purus sit amet luctus venenatis, lectus magna
                   fringilla urna, porttitor
                 </h5>
-                <SignUp
+                <SignUpButton
                   label="Sign Up Now"
-                  className="h-10 px-16 uppercase"
+                  className="h-10 px-16 uppercase btn-sm"
                   icon="BsArrowRightShort"
                 />
                 <div className="flex flex-row gap-x-4 md:mt-3 md:gap-x-6 lg:mt-12 lg:gap-x-8">
@@ -54,11 +53,11 @@ export default function Home() {
                   <Chip title="Games " />
                 </div>
               </div>
-              <div className="relative -mt-5 hidden flex-row md:flex">
+              <div className="relative hidden flex-row md:flex">
                 <div className="absolute right-0 h-full w-full">
                   <Carrousel
                     images={images}
-                    options={{ align: "end", inViewThreshold: 0.2 }}
+                    options={{ align: "start", inViewThreshold: 0.5 }}
                   />
                 </div>
               </div>
@@ -120,7 +119,7 @@ export default function Home() {
                     fringilla urna, porttitor
                   </p>
                   <div className="mb-10 hidden lg:mb-0 lg:block">
-                    <SignUp className=" h-12 px-11" label="Sign up now" />
+                    <SignUpButton className=" h-12 px-11" label="Sign up now" />
                   </div>
                 </div>
               </div>

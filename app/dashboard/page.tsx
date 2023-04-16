@@ -3,8 +3,8 @@ import "react-tooltip/dist/react-tooltip.css";
 import Image from "next/image";
 import { BsPlus } from "react-icons/bs";
 
-import ETHGraph from "@components/chart/ETHChart";
-import CoinTrade from "@components/cointrade/CoinTrade";
+import ETHGraph from "@components/charts/ETHChart";
+import CoinTrade from "@components/CoinTrade";
 import CoinVariation from "@components/CoinVariation";
 import { coin } from "@utils/format";
 
