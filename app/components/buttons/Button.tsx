@@ -9,6 +9,7 @@ import Loader from "@components/Loader";
 interface ButtonProps {
   title: string;
   className?: string;
+  textClass?: string;
   disabled?: boolean;
   icon?: "BsArrowRightShort" | "BsPlus";
   variant?: "primary" | "";
@@ -22,6 +23,7 @@ const Button: React.FC<ButtonProps> = (props) => {
   const {
     title,
     className,
+    textClass,
     onClick,
     disabled,
     icon,
@@ -46,7 +48,7 @@ const Button: React.FC<ButtonProps> = (props) => {
       onClick={onClick}
       type={type}
     >
-      <span>
+      <span className={textClass}>
         {icon === "BsPlus" && iconLeft && (
           <BsPlus className="mx-auto inline h-6 w-6" />
         )}

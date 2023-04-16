@@ -45,6 +45,7 @@ export default function Home() {
                 <SignUpButton
                   label="Sign Up Now"
                   className="h-10 px-16 uppercase btn-sm"
+                  textClass="text-base"
                   icon="BsArrowRightShort"
                 />
                 <div className="flex flex-row gap-x-4 md:mt-3 md:gap-x-6 lg:mt-12 lg:gap-x-8">

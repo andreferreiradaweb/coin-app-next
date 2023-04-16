@@ -23,7 +23,7 @@ const Navbar = () => {
                 <SignInButton />
               </div>
               <div className="ml-6 hidden md:block">
-                <SignUpButton />
+                <SignUpButton textClass="text-sm leading-4" />
               </div>
             </div>
 

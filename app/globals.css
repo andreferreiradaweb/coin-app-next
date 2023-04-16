@@ -40,8 +40,8 @@
     @apply flex items-center justify-center;
   }
 
-  button.primary > span {
-    @apply text-sm text-white;
+  button.primary span {
+    @apply text-white;
   }
 
   button.ghost {
