@@ -58,21 +58,3 @@ To get a local copy up and running follow these simple steps.
    API_KEY = "ENTER YOUR API";
    ASSETS_ID = "BTC;ETH;DOGE;XRP;XMR;DOT;LTC;ADA;THETA;ETC;";
    ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-[product-screenshot]: public/images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=flat&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Tailwind]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white
-[Tailwind-url]: https://tailwindcss.com
-[Hook-Form-shield]: https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=flat&logo=reacthookform&logoColor=white
-[Hook-Form-url]: https://react-hook-form.com
-[Figma-shield]: https://img.shields.io/badge/figma-%23F24E1E.svg?style=flat&logo=figma&logoColor=white
-[Figma-url]: https://www.figma.com/file/B8scopEM014WR4Oh58UaDb/%5BEduSynch%5D--Front-End-Test
-[Vitest-shield]: https://img.shields.io/static/v1?style=flat&message=Vitest&color=6E9F18&logo=Vitest&logoColor=FFFFFF&label=
-[Vitest-url]: https://vitest.dev/
-[Typescript-shield]: https://img.shields.io/static/v1?style=flat&message=TypeScript&color=3178C6&logo=TypeScript&logoColor=FFFFFF&label=
-[Typescript-url]: https://www.typescriptlang.org/
