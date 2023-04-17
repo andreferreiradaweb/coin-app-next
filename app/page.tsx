@@ -27,28 +27,22 @@ export default function Home() {
         <section className="md:pt-15 relative pt-10 xl:pt-20">
           <Container>
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-24">
-              <div className="flex flex-col items-center gap-y-7 md:items-start">
-                <h1 className="hidden text-primary-500 lg:block font-bold text-4x1">
+              <div className="flex flex-col items-center md:items-start">
+                <h1 className="text-center md:text-left text-primary-500 mb-2 md:mb-4 lg:mb-6 sm:mb-3 font-bold text-h1-sm  md:text-h1-md lg:text-h1-lg leading-h1-sm md:leading-h1-md lg:leading-h1-lg">
                   Lorem ipsum dolor sit amet, consectetur
                 </h1>
-                <h3 className="hidden text-primary-500 md:block lg:hidden">
-                  Lorem ipsum dolor sit amet, consectetur
-                </h3>
-                <h5 className="px-2 text-center font-bold text-primary-500 md:hidden">
-                  Lorem ipsum dolor sit amet, consectetur
-                </h5>
-                <h5 className="px-2 text-center text-base md:px-0 md:text-left md:text-xl">
+                <h5 className="px-2 text-center text-base mb-6 lg:mb-8 md:px-0 md:text-left md:max-w-md">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                   aliquam, purus sit amet luctus venenatis, lectus magna
                   fringilla urna, porttitor
                 </h5>
                 <SignUpButton
                   label="Sign Up Now"
-                  className="h-10 px-16 uppercase btn-sm"
-                  textClass="text-base"
+                  className="h-10 px-16 uppercase btn-sm mb-6 md:mb-10 lg:mb-20"
+                  textClass="text-base font-bold"
                   icon="BsArrowRightShort"
                 />
-                <div className="flex flex-row gap-x-4 md:mt-3 md:gap-x-6 lg:mt-12 lg:gap-x-8">
+                <div className="flex flex-row gap-x-4 md:gap-x-6 lg:gap-x-8">
                   <Chip title="Cryptos" />
                   <Chip title="NFTs" />
                   <Chip title="Games " />
