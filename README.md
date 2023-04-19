@@ -4,7 +4,7 @@
   <p align="center">
     Crypto landing page and dashboard
     <br />
-    <a href="https://coin-app-next.vercel.app/">Preview</a>
+    <a href="https://coin-app-next-five.vercel.app/">Preview</a>
     ·
     <a href="https://github.com/andreferreiradaweb/coin-app-next/issues">Report Bug</a>
     ·
@@ -29,6 +29,10 @@ This is a frontend coding challenge proposed by EduSynch. The project is a crypt
 ### Access the prototype on Figma
 
 [![Figma][Figma-shield]][Figma-url]
+
+### Accessible urls
+ - <a href="https://coin-app-next-five.vercel.app/">Home</a>
+ - <a href="https://coin-app-next-five.vercel.app/dashboard">Dashboard</a>
 
 <!-- GETTING STARTED -->
 
