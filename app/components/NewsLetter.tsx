@@ -52,6 +52,7 @@ const Newsletter: React.FC = () => {
             type="submit"
             title="Subscribe"
             className="mt-6 h-12 w-full shadow-xl disabled:bg-primary-200"
+            textClass="text-sm md:text-base"
             disabled={methods.formState.isSubmitting}
           />
         </form>

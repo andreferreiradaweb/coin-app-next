@@ -22,7 +22,7 @@ interface InputProps extends UseControllerProps {
   label?: string;
   Icon?: IconType;
   type?: string;
-  placeholder: string;
+  placeholder?: string;
   className?: string;
   disabled?: boolean;
   formatPrice?: boolean;

@@ -38,7 +38,7 @@ const Table: React.FC<TableProps> = (props) => {
                   hideViewMore && "last:text-center"
                 )}
               >
-                <label className="font-normal text-secondary-500">{h}</label>
+                <label className="font-normal text-secondary-500 text-xs md:text-sm">{h}</label>
               </th>
             ))}
           </tr>

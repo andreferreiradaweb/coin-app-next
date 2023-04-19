@@ -25,14 +25,16 @@ module.exports = {
         'scrolling-left': 'scroll-left 15s linear infinite',
       },
       fontSize: {
-        'h1-sm': '20px',
-        'h1-md': '32px',
-        'h1-lg': '48px',
+        'h1-sm': '1.25rem',
+        'h1-md': '2rem', 
+        'h1-lg': '3rem', 
+        'h2-md': '2rem', 
+        'h2-lg': '2.5rem', 
       },
       lineHeight: {
-        'h1-sm': '32px',
-        'h1-md': '40px',
-        'h1-lg': '56px',
+        'h1-sm': '2rem', 
+        'h1-md': '2.5rem', 
+        'h1-lg': '3.5rem',
       },
       boxShadow: {
         "menu": "0px 4px 8px rgba(77, 77, 77, 0.1)",

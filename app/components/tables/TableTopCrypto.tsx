@@ -50,10 +50,10 @@ const TableTopCrypto: React.FC<TableProps> = async (props) => {
                       ""
                     )}.png`}
                   />
-                  <p className="ml-4">{i.name}</p>{" "}
-                  <p className="ml-2 text-secondary-500">{i.asset_id}</p>
+                  <p className="ml-4 text-xs md:text-base">{i.name}</p>{" "}
+                  <p className="ml-2 text-xs md:text-base text-secondary-500">{i.asset_id}</p>
                 </td>
-                <td className="py-5">{coin(i?.price_usd)}</td>
+                <td className="py-5 text-xs md:text-base">{coin(i?.price_usd)}</td>
                 <td className="py-5">
                   <CoinVariation name={i?.asset_id} />
                 </td>
@@ -63,6 +63,7 @@ const TableTopCrypto: React.FC<TableProps> = async (props) => {
                       title="Buy"
                       type="button"
                       className="ml-auto mr-6 h-8 bg-tertiary-700 hover:bg-tertiary-800"
+                      textClass="text-sm"
                     />
                   </div>
                 </td>
@@ -109,8 +110,8 @@ const TableTopCrypto: React.FC<TableProps> = async (props) => {
                         ""
                       )}.png`}
                     />
-                    <p className="ml-4">{i.name}</p>{" "}
-                    <p className="ml-2 text-secondary-500">{i.asset_id}</p>
+                    <p className="ml-4 text-xs md:text-base">{i.name}</p>{" "}
+                    <p className="ml-2 text-xs md:text-base text-secondary-500">{i.asset_id}</p>
                   </td>
                   <td className="py-5 pr-2">
                     <div>

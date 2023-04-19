@@ -9,13 +9,15 @@ export type IconTypes =
 interface ImageProps {
   width?: number;
   height?: number;
+  className?: string;
 }
 
 export const Icons: {
   [icon in IconTypes]: (props: ImageProps) => JSX.Element;
 } = {
-  btc: ({ width, height }: ImageProps) => (
+  btc: ({ width, height, className }: ImageProps) => (
     <svg
+      className={className}
       width={width || 64}
       height={height || 64}
       viewBox="0 0 64 64"
@@ -78,8 +80,9 @@ export const Icons: {
       />
     </svg>
   ),
-  solutions: ({ width, height }: ImageProps) => (
+  solutions: ({ width, height, className }: ImageProps) => (
     <svg
+      className={className}
       width={width || 64}
       height={height || 64}
       viewBox="0 0 64 64"
@@ -118,8 +121,9 @@ export const Icons: {
       />
     </svg>
   ),
-  graph: ({ width, height }: ImageProps) => (
+  graph: ({ width, height, className }: ImageProps) => (
     <svg
+      className={className}
       width={width || 64}
       height={height || 64}
       viewBox="0 0 64 64"
@@ -140,8 +144,9 @@ export const Icons: {
       />
     </svg>
   ),
-  computer: ({ width, height }: ImageProps) => (
+  computer: ({ width, height, className }: ImageProps) => (
     <svg
+      className={className}
       width={width || 64}
       height={height || 64}
       viewBox="0 0 64 64"
@@ -156,8 +161,9 @@ export const Icons: {
       />
     </svg>
   ),
-  wallet: ({ width, height }: ImageProps) => (
+  wallet: ({ width, height, className }: ImageProps) => (
     <svg
+      className={className}
       width={width || 34}
       height={height || 34}
       viewBox="0 0 34 34"
@@ -235,8 +241,9 @@ export const Icons: {
       />
     </svg>
   ),
-  swap: ({ width, height }: ImageProps) => (
+  swap: ({ width, height, className }: ImageProps) => (
     <svg
+      className={className}
       width={width || 22}
       height={height || 22}
       viewBox="0 0 20 22"
@@ -340,9 +347,9 @@ const Card: React.FC<CardProps> = (props) => {
 
   return (
     <div className="w-52 rounded-md bg-white p-6 shadow-card sm:w-auto">
-      <Icon />
-      <p className="mb-2 mt-1 font-bold text-primary-500">{title}</p>
-      <h4 className="font-bold">{subtitle}</h4>
+      <Icon className="mb-4" />
+      <p className="text-sm md:text-base mb-1 font-bold text-primary-500">{title}</p>
+      <h4 className="text-xl md:text-2xl font-bold mb-2">{subtitle}</h4>
       <p>
         <span>{content}</span>
       </p>

@@ -71,8 +71,8 @@ export default function Home() {
           <Container>
             <div className="md:py-15 py-14 xl:pb-28 xl:pt-32">
               <div className="grid grid-cols-1 lg:grid-cols-[1.5fr,1fr]">
-                <div className="order-2 flex flex-row gap-y-8 overflow-auto sm:grid sm:grid-rows-2 lg:order-1">
-                  <div className="flex flex-row gap-4 sm:grid sm:grid-cols-[1fr,1fr,auto] sm:gap-8">
+                <div className="order-2 flex flex-row sm:gap-y-6 md:gap-y-6 lg:gap-y-8 overflow-auto sm:grid sm:grid-rows-2 lg:order-1">
+                  <div className="flex flex-row gap-4 sm:gap-6 md:gap-6 sm:grid sm:grid-cols-[1fr,1fr,auto] lg:gap-8">
                     <Card
                       iconType="btc"
                       title="For your company"
@@ -85,9 +85,9 @@ export default function Home() {
                       subtitle="Crypto Solutions"
                       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, "
                     />
-                    <div className="sm:w-3 xl:w-7 2xl:w-14" />
+                    <div className="sm:w-3 xl:w-7 2xl:w-14 hidden md:block" />
                   </div>
-                  <div className="flex flex-row gap-4 sm:grid sm:grid-cols-[auto,1fr,1fr] sm:gap-8">
+                  <div className="flex flex-row gap-4 sm:gap-6 md:gap-6 sm:grid sm:grid-cols-[auto,1fr,1fr] lg:gap-8">
                     <div className="sm:w-3 xl:w-7 2xl:w-14" />
                     <Card
                       iconType="graph"
@@ -104,17 +104,17 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="order-1 flex flex-col justify-center md:ml-8 md:px-10 lg:order-2 lg:w-10/12 lg:px-0">
-                  <h5 className="mb-1 font-bold text-primary-500">
+                  <h5 className="mb-1 text-base lg:text-xl font-bold  text-primary-500">
                     Lorem ipsum
                   </h5>
-                  <h2 className="mb-4">Lorem ipsum</h2>
-                  <p className="mb-14">
+                  <h2 className="mb-4 text-2xl md:text-h2-md lg:text-h2-lg font-bold">Lorem ipsum</h2>
+                  <p className="mb-8 md:mb-10 text-sm md:text-base">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                     aliquam, purus sit amet luctus venenatis, lectus magna
                     fringilla urna, porttitor
                   </p>
                   <div className="mb-10 hidden lg:mb-0 lg:block">
-                    <SignUpButton className=" h-12 px-11" label="Sign up now" />
+                    <SignUpButton className="h-12 px-11" label="Sign up now" />
                   </div>
                 </div>
               </div>
@@ -124,6 +124,7 @@ export default function Home() {
         <section id="top-cryptos">
           <Container>
             <div className="md:py-15 py-14 xl:pb-28 xl:pt-32">
+              <h1 className="font-bold text-xl md:text-2xl lg:text-h1-md text-center mb-4 sm:mb-10 lg:mb-12">Top Cryptos</h1>
               <TableTopCrypto
                 headerMobile={["Crypto", "Actions"]}
                 header={["#", "Crypto", "Price", "Change", "Trade"]}
@@ -144,12 +145,12 @@ export default function Home() {
 
             <Container>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-x-8 lg:gap-x-60">
-                <div className="z-20 mb-10 sm:mb-0 lg:ml-20">
-                  <h4 className="mb-1 font-bold text-primary-200">
+                <div className="z-20 mb-10 md:mb-0 lg:ml-20">
+                  <h4 className="mb-1 font-bold text-sm md:text-xl lg:text-2xl text-primary-200">
                     Lorem ipsum
                   </h4>
-                  <h2 className="mb-4 font-bold text-white">Lorem upsum</h2>
-                  <p className="font-normal text-white">
+                  <h2 className="mb-2 md:mb-4 font-bold text-white text-2xl md:text-h1-md lg:text-h1-lg whitespace-nowrap">Lorem upsum</h2>
+                  <p className="font-normal text-white text-sm md:text-base">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
                     aliquam, purus sit amet luctus venenatis, lectus magna
                     fringilla urna, porttitor
@@ -165,7 +166,7 @@ export default function Home() {
         <footer className="bg-white">
           <Container>
             <div className="my-6 flex flex-col items-center justify-between sm:flex-row">
-              <p className="hidden sm:block">
+              <p className="hidden sm:block text-sm">
                 Copyright © 2022 - All rights reserved
               </p>
               <div>
