@@ -25,22 +25,22 @@ export default function Dashboard() {
                 />
               </div>
               <div className="flex-1">
-                <h4 className="hidden whitespace-nowrap md:inline">
+                <h4 className="text-xl md:text-2xl hidden whitespace-nowrap md:inline">
                   Balance in US$
                 </h4>
-                <p className="block md:hidden">
+                <p className="text-sm block md:hidden">
                   Balance <span className="hidden sm:block">in US$</span>
                 </p>
                 <small className="block text-secondary-500 sm:hidden">
                   in US$
                 </small>
-                <p className="hidden text-secondary-500 md:block">
+                <p className="text-sm md:text-base hidden text-secondary-500 md:block">
                   (approximately)
                 </p>
               </div>
             </div>
             <div className="rounded-lg flex flex-1 flex-row items-center justify-center bg-primary-100 p-2 md:p-4">
-              <h3 className="hidden font-bold md:block">{coin(32256.0)}</h3>
+              <h3 className="text-base md:text-2xl lg:text-h1-md hidden font-bold md:block">{coin(32256.0)}</h3>
               <p className="block font-bold md:hidden">{coin(32256.0)}</p>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function Dashboard() {
         <div className="col-span-2 flex flex-col rounded-lg bg-white shadow-md md:flex-row lg:col-span-1">
           <div className="flex-1 p-2 md:p-4">
             <div className="flex flex-col">
-              <label className="font-bold">NFT&apos;s NEWS</label>
+              <label className="text-xs md:text-sm font-bold">NFT&apos;s NEWS</label>
               <small className="mb-1 mt-1 leading-4 text-secondary-500 md:mb-3">
                 New ElephantX NFT to be lauched!
               </small>
@@ -82,7 +82,7 @@ export default function Dashboard() {
                 href="#"
                 className="hidden flex-row items-center text-primary-500 md:flex"
               >
-                <span className="mr-1">Read more</span>
+                <span className="text-xs mr-1">Read more</span>
                 <BsPlus />
               </a>
             </div>
