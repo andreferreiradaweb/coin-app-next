@@ -7,7 +7,7 @@ import { Icons } from "@components/Card";
 import Button from "@components/buttons/Button";
 
 import { coin, leading } from "@utils/format";
-import type { Coin } from "@utils/getCoins";
+import type { ICoin } from "@utils/getCoins";
 import useTradeModal from "@hooks/useTradeModal";
 import useTrade from "@hooks/useTrade";
 
@@ -15,14 +15,14 @@ import Table from "./Table";
 import ClientCoinVariation from "@components/ClientCoinVariation";
 import { twMerge } from "tailwind-merge";
 
-interface TableProps {
+interface ITableHoldingsProps {
   header: string[];
   headerMobile: string[];
   updatedAt?: number;
-  items: [{ crypto: Coin; value: string }];
+  items: [{ crypto: ICoin; value: string }];
 }
 
-const TableHoldings: React.FC<TableProps> = (props) => {
+const TableHoldings: React.FC<ITableHoldingsProps> = (props) => {
   let { header, headerMobile, updatedAt, items } = props;
   const [mini, setMini] = useState<boolean>(true);
 
@@ -40,7 +40,7 @@ const TableHoldings: React.FC<TableProps> = (props) => {
 
   return (
     <>
-      <div className="hidden w-full md:block">
+      <div className="rounded-lg hidden w-full md:block">
         <Table header={header} hideViewMore updatedAt={updatedAt}>
           <>
             {items?.map((i, index) => (
@@ -72,7 +72,7 @@ const TableHoldings: React.FC<TableProps> = (props) => {
                 </td>
                 <td className="py-5 text-gray">
                   <div className="flex flex-col">
-                    <p>
+                    <p className="text-sm">
                       {coin((i?.crypto?.price_usd || 0) * parseFloat(i.value))}
                     </p>
                     <div>
@@ -112,9 +112,9 @@ const TableHoldings: React.FC<TableProps> = (props) => {
         </Table>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 md:hidden">
+      <div className="rounded-lg grid grid-cols-2 gap-4 md:hidden">
         {result.map((i, index) => (
-          <div key={i?.crypto?.asset_id} className="rounded-t-lg shadow-menu">
+          <div key={i?.crypto?.asset_id} className="rounded-lg shadow-menu">
             <div className="flex flex-row items-center justify-center bg-primary-100 px-5 py-4">
               <Image
                 width={32}
@@ -128,7 +128,7 @@ const TableHoldings: React.FC<TableProps> = (props) => {
               <p className="ml-4">{i.crypto.name}</p>{" "}
               <p className="ml-2 text-secondary-500">{i.crypto.asset_id}</p>
             </div>
-            <div className="rounded-b-lg bg-white p-4">
+            <div className="rounded-lg bg-white p-4">
               <div className="mb-4 flex flex-col">
                 <small>Holdings</small>
                 <p>{coin((i?.crypto?.price_usd || 0) * parseFloat(i.value))}</p>

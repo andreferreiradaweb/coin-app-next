@@ -3,14 +3,14 @@
 import { twMerge } from "tailwind-merge";
 import { Popover } from "@headlessui/react";
 
-interface PopMenuProps {
+interface IPopMenuProps {
   children: JSX.Element;
   item: JSX.Element;
   className?: string;
   position?: string;
 }
 
-const PopMenu: React.FC<PopMenuProps> = (props) => {
+const PopMenu: React.FC<IPopMenuProps> = (props) => {
   const { children, item, className, position } = props;
 
   return (

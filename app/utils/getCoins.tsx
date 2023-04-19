@@ -1,6 +1,6 @@
 import { cache } from "react";
 
-const initialState: Coin[] = [
+const initialState: ICoin[] = [
   {
     asset_id: "BTC",
     name: "Bitcoin",
@@ -193,7 +193,7 @@ const initialState: Coin[] = [
   },
 ];
 
-export interface Coin {
+export interface ICoin {
   asset_id: string;
   name: string;
   type_is_crypto?: number;
@@ -227,7 +227,7 @@ export const getCoins = cache(async () => {
     return await Promise.resolve(initialState);
   }
 
-  const coins: Promise<Coin[]> = await res.json();
+  const coins: Promise<ICoin[]> = await res.json();
 
   if (!Array.isArray(coins)) {
     return [];

@@ -7,7 +7,7 @@ import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 import ClassNames from "embla-carousel-class-names";
 
-type CarrouselType = {
+type CarrouselProps = {
   images: StaticImageData[];
   options?: EmblaOptionsType;
 };
@@ -20,7 +20,7 @@ const wheelGestureOptions = {
   speed: 1,
 };
 
-const Carrousel: React.FC<CarrouselType> = (props) => {
+const Carrousel: React.FC<CarrouselProps> = (props) => {
   const { images, options } = props;
   const [active, setActive] = useState<number>(0);
 

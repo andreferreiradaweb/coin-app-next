@@ -12,11 +12,11 @@ import {
 
 import type { ExchangeRate } from "@utils/getCoinVariation";
 
-interface LineProps {
+interface ILineProps {
   variation: ExchangeRate[];
 }
 
-const Graph: React.FC<LineProps> = ({ variation }) => {
+const Graph: React.FC<ILineProps> = ({ variation }) => {
   return (
     <ResponsiveContainer width="100%" height="100%" className="z-0">
       <AreaChart width={200} height={200} data={variation}>

@@ -9,7 +9,7 @@ import { HiChevronDown } from "react-icons/hi";
 import { TbDoorExit } from "react-icons/tb";
 import useSidebar from "@hooks/useSidebar";
 
-import avatar from "../../../public/images/avatar.webp";
+import avatar from "@public/images/avatar.webp";
 import { twMerge } from "tailwind-merge";
 
 const Navbar = () => {

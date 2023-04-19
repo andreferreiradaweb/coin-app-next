@@ -1,13 +1,13 @@
 import { create } from "zustand";
 
-interface TradeModalStore {
+interface ITradeModalStore {
   isOpen: boolean;
   onOpen: () => void;
   onClose: () => void;
   toggleModal: () => void;
 }
 
-const useTradeModal = create<TradeModalStore>((set) => ({
+const useTradeModal = create<ITradeModalStore>((set) => ({
   isOpen: false,
   onOpen: () => set({ isOpen: true }),
   onClose: () => set({ isOpen: false }),

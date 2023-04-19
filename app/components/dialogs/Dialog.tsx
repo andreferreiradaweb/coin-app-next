@@ -3,13 +3,13 @@
 import { Dialog } from "@headlessui/react";
 import { GrClose } from "react-icons/gr";
 
-interface DialogProps {
+interface IDialogProps {
   bodyContent: JSX.Element;
   open: boolean;
   onClose: () => void;
 }
 
-const Modal: React.FC<DialogProps> = (props) => {
+const Modal: React.FC<IDialogProps> = (props) => {
   const { bodyContent, open, onClose } = props;
 
   return (

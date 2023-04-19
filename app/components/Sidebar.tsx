@@ -8,12 +8,12 @@ import { Icons } from "@components/Card";
 import type { IconTypes } from "@components/Card";
 import useSidebar from "@hooks/useSidebar";
 
-interface ItemProps {
+interface IItemProps {
   iconType: IconTypes;
   title: string;
 }
 
-const items: ItemProps[] = [
+const items: IItemProps[] = [
   {
     iconType: "wallet",
     title: "Lorem Ipsum",

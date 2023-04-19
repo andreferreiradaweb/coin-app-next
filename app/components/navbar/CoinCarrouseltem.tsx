@@ -1,7 +1,7 @@
 import CoinVariation from "../CoinVariation";
-import type { Coin } from "@utils/getCoins";
+import type { ICoin } from "@utils/getCoins";
 
-const CoinCarrouselItem: React.FC<Coin> = (props) => {
+const CoinCarrouselItem: React.FC<ICoin> = (props) => {
   const { price_usd, asset_id } = props;
 
   return (

@@ -8,7 +8,7 @@ import {
 
 import { CgCheck } from "react-icons/cg";
 
-interface InputProps extends UseControllerProps {
+interface ICheckboxProps extends UseControllerProps {
   name: string;
   label?: string | JSX.Element;
   type?: string;
@@ -18,7 +18,7 @@ interface InputProps extends UseControllerProps {
   required?: boolean;
 }
 
-const Checkbox: React.FC<InputProps> = (props) => {
+const Checkbox: React.FC<ICheckboxProps> = (props) => {
   const formContext = useFormContext();
   const { name, label, rules, type, formatPrice, ...inputProps } = props;
 

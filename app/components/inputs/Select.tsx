@@ -2,18 +2,14 @@
 
 import { Fragment, useState } from "react";
 import { Combobox, Transition } from "@headlessui/react";
-import { TbChevronDown, TbChevronRight } from "react-icons/tb";
+import { TbChevronDown } from "react-icons/tb";
 
 import {
   useController,
   useFormContext,
   UseControllerProps,
 } from "react-hook-form";
-import { twMerge } from "tailwind-merge";
-
-import { Coin } from "@utils/getCoins";
-
-export interface SelectProps extends UseControllerProps {
+export interface ISelectProps extends UseControllerProps {
   name: string;
   placeholder?: string;
   data: any[];
@@ -23,7 +19,7 @@ export interface SelectProps extends UseControllerProps {
   children: (data: any, selected: boolean, active: boolean) => JSX.Element;
 }
 
-const Select: React.FC<SelectProps> = (props) => {
+const Select: React.FC<ISelectProps> = (props) => {
   const [query, setQuery] = useState("");
 
   const formContext = useFormContext();

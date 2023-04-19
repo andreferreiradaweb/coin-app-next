@@ -23,7 +23,7 @@ export default function DashboardLayout({
         </div>
         <footer className="shadow-trade">
           <div className="flex items-center justify-center py-6 sm:justify-between sm:px-12 lg:justify-center lg:px-0">
-            <label>Copyright © 2022 - All rights reserved</label>
+            <label className="text-xs md:text-sm">Copyright © 2022 - All rights reserved</label>
             <div className="hidden sm:block lg:hidden">
               <Logo />
             </div>

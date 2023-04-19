@@ -4,14 +4,14 @@ import { Children, memo, useMemo, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import Button from "@components/buttons/Button";
 
-interface TableProps {
+interface ITableProps {
   header: string[];
   children: JSX.Element;
   hideViewMore?: boolean;
   updatedAt?: number;
 }
 
-const Table: React.FC<TableProps> = (props) => {
+const Table: React.FC<ITableProps> = (props) => {
   let { header, children, hideViewMore, updatedAt } = props;
   const result = Children.toArray(children);
   const [mini, setMini] = useState<boolean>(true);

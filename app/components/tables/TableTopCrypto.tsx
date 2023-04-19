@@ -5,20 +5,20 @@ import Button from "@components/buttons/Button";
 import Disclosure from "@components/Disclosure";
 
 import { coin, leading } from "@utils/format";
-import type { Coin } from "@utils/getCoins";
+import type { ICoin } from "@utils/getCoins";
 import { getCoins } from "@utils/getCoins";
 
 import CoinVariation from "../CoinVariation";
 import Table from "./Table";
 
-interface TableProps {
+interface ITableTopCryptoProps {
   header: string[];
   headerMobile: string[];
-  items?: Coin[];
+  items?: ICoin[];
 }
 
 /* @ts-expect-error Async Server Component */
-const TableTopCrypto: React.FC<TableProps> = async (props) => {
+const TableTopCrypto: React.FC<ITableTopCryptoProps> = async (props) => {
   let { header, headerMobile, items } = props;
 
   if (!items) {

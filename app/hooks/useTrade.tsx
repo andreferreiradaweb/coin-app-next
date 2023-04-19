@@ -4,7 +4,7 @@ import { immer } from "zustand/middleware/immer";
 import { Schema } from "@components/dialogs/AddCrypto";
 import { Schema as TransferSchema } from "@components/dialogs/Trade";
 
-interface TradeStore {
+interface ITradeStore {
   data: any;
   updatedAt: number;
   activeCrypto: any;
@@ -14,7 +14,7 @@ interface TradeStore {
 }
 
 const useTradeStore = create(
-  immer<TradeStore>((set) => ({
+  immer<ITradeStore>((set) => ({
     data: [],
     updatedAt: 0,
     activeCrypto: {},

@@ -10,12 +10,12 @@ import Card from "@components/Card";
 import TableTopCrypto from "@components/tables/TableTopCrypto";
 import Newsletter from "@components/NewsLetter";
 
-import shape from "../public/images/shape.svg";
-import logo from "../public/images/logo.svg";
-import newsletterShape from "../public/images/newsletter-shape.svg";
+import shape from "@public/images/shape.svg";
+import logo from "@public/images/logo.svg";
+import newsletterShape from "@public/images/newsletter-shape.svg";
 
-import boy from "../public/images/boy.webp";
-import girl from "../public/images/girl.webp";
+import boy from "@public/images/boy.webp";
+import girl from "@public/images/girl.webp";
 
 const images: StaticImageData[] = [girl, boy];
 

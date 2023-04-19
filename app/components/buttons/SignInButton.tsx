@@ -4,11 +4,11 @@ import { twMerge } from "tailwind-merge";
 import Button from "./Button";
 import useLoginModal from "@hooks/useLoginModal";
 
-interface SignInButtonProps {
+interface ISignInButtonProps {
   className?: string;
 }
 
-const SignInButton: React.FC<SignInButtonProps> = (props) => {
+const SignInButton: React.FC<ISignInButtonProps> = (props) => {
   const { className } = props;
   const loginModal = useLoginModal();
 

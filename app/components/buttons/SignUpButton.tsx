@@ -3,14 +3,14 @@
 import Button from "./Button";
 import useRegisterModal from "@hooks/useRegisterModal";
 
-interface SignUpProps {
+interface ISignUpProps {
   className?: string;
   textClass?: string;
   icon?: "BsArrowRightShort" | "BsPlus";
   label?: string;
 }
 
-const SignUpButton: React.FC<SignUpProps> = (props) => {
+const SignUpButton: React.FC<ISignUpProps> = (props) => {
   const { className, textClass, icon, label } = props;
   const registerModal = useRegisterModal();
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { TbChevronRight } from "react-icons/tb";
 import Select from "./Select";
-import { Coin } from "@utils/getCoins";
+import { ICoin } from "@utils/getCoins";
 
 const fetchData = async () => {
   const res = await fetch("/dashboard/api");
@@ -14,7 +14,7 @@ const dataPromise = fetchData();
 
 /* @ts-expect-error Async Server Component */
 const CryptoSelect: React.FC<SelectProps> = (props) => {
-  const data: Coin[] = use(dataPromise);
+  const data: ICoin[] = use(dataPromise);
 
   return (
     <Select

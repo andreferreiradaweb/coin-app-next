@@ -8,15 +8,15 @@ import CoinTrade from "@components/CoinTrade";
 import CoinVariation from "@components/CoinVariation";
 import { coin } from "@utils/format";
 
-import balance from "../../public/images/balance.webp";
+import balance from "@public/images/balance.webp";
 
 export default function Dashboard() {
   return (
     <div className="flex-1 bg-[#F9F9F9] p-6 md:p-12 lg:p-14">
       <div className="mb-8 grid grid-cols-4 gap-x-4 gap-y-4 md:gap-x-8 md:gap-y-6 lg:h-28 lg:auto-rows-fr lg:grid-cols-[2fr,280px,280px] xl:grid-cols-[2fr,1fr,1fr]">
-        <div className="col-span-4 rounded-lg shadow-md lg:col-span-1">
-          <div className="grid h-full grid-cols-2">
-            <div className="flex flex-row items-center justify-center gap-x-4 bg-white p-4 md:justify-start md:p-6">
+        <div className="rounded-lg col-span-4 shadow-md lg:col-span-1">
+          <div className="rounded-lg grid h-full grid-cols-2">
+            <div className="rounded-lg flex flex-row items-center justify-center gap-x-4 bg-white p-4 md:justify-start md:p-6">
               <div className="h-8 w-8 md:h-16 md:w-16">
                 <Image
                   className="h-8 w-8 object-contain md:h-16 md:w-16"
@@ -39,7 +39,7 @@ export default function Dashboard() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-1 flex-row items-center justify-center bg-primary-100 p-2 md:p-4">
+            <div className="rounded-lg flex flex-1 flex-row items-center justify-center bg-primary-100 p-2 md:p-4">
               <h3 className="hidden font-bold md:block">{coin(32256.0)}</h3>
               <p className="block font-bold md:hidden">{coin(32256.0)}</p>
             </div>
@@ -87,7 +87,7 @@ export default function Dashboard() {
               </a>
             </div>
           </div>
-          <div className="h-24 bg-[url('/images/elephant.webp')] bg-cover bg-center bg-no-repeat md:h-auto md:flex-1">
+          <div className="rounded-bl-lg sm:rounded-bl-none rounded-br-lg sm:rounded-tr-lg h-24 bg-[url('/images/elephant.webp')] bg-cover bg-center bg-no-repeat md:h-auto md:flex-1">
             {" "}
           </div>
         </div>

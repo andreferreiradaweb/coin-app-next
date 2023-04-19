@@ -17,7 +17,7 @@ import {
 
 import { IconType } from "react-icons";
 
-interface InputProps extends UseControllerProps {
+interface IInputProps extends UseControllerProps {
   name: string;
   label?: string;
   Icon?: IconType;
@@ -29,7 +29,7 @@ interface InputProps extends UseControllerProps {
   required?: boolean;
 }
 
-const Input: React.FC<InputProps> = (props) => {
+const Input: React.FC<IInputProps> = (props) => {
   const {
     name,
     label,

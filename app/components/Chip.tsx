@@ -1,8 +1,8 @@
-interface ChipProps {
+interface IChipProps {
   title: string;
 }
 
-const Chip: React.FC<ChipProps> = (props) => {
+const Chip: React.FC<IChipProps> = (props) => {
   const { title } = props;
   return (
     <div className="rounded bg-primary-100 px-4 py-1 hover:bg-primary-200">

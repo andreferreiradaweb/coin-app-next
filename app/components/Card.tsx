@@ -333,14 +333,14 @@ export const Icons: {
   ),
 };
 
-interface CardProps {
+interface ICardProps {
   iconType: IconTypes;
   title: string;
   subtitle: string;
   content: string;
 }
 
-const Card: React.FC<CardProps> = (props) => {
+const Card: React.FC<ICardProps> = (props) => {
   const { iconType, title, subtitle, content } = props;
 
   const Icon = Icons[iconType];

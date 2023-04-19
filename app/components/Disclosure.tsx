@@ -3,13 +3,13 @@
 import { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
 
-interface DisclosureProps {
+interface IDisclosureProps {
   children: JSX.Element;
   className?: string;
   bodyContent?: JSX.Element;
 }
 
-const ContentDisclosure: React.FC<DisclosureProps> = ({
+const ContentDisclosure: React.FC<IDisclosureProps> = ({
   children,
   className,
   bodyContent,

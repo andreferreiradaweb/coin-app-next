@@ -1,13 +1,13 @@
 import { create } from "zustand";
 
-interface AddCryptoModalStore {
+interface IAddCryptoModalStore {
   isOpen: boolean;
   onOpen: () => void;
   onClose: () => void;
   toggleModal: () => void;
 }
 
-const useAddCryptoModal = create<AddCryptoModalStore>((set) => ({
+const useAddCryptoModal = create<IAddCryptoModalStore>((set) => ({
   isOpen: false,
   onOpen: () => set({ isOpen: true }),
   onClose: () => set({ isOpen: false }),

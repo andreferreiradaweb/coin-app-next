@@ -6,7 +6,7 @@ import { BsArrowRightShort, BsPlus } from "react-icons/bs";
 
 import Loader from "@components/Loader";
 
-interface ButtonProps {
+interface IButtonProps {
   title: string;
   className?: string;
   textClass?: string;
@@ -19,7 +19,7 @@ interface ButtonProps {
   iconRight?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = (props) => {
+const Button: React.FC<IButtonProps> = (props) => {
   const {
     title,
     className,
